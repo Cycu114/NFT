@@ -15,3 +15,12 @@ Bedziemy również potrzebować portfel zasilony Ethereum jak równiez tokenem L
 Ethereum mozna otrzyamc tutaj https://faucet.rinkeby.io/
 Link mozna otrzymac tutaj https://rinkeby.chain.link/
 
+Skrypty uruchamiamy w następującej kolejnosci
+
+brownie run scripts/advanced_collectible/deploy_advanced.py --network rinkeby
+brownie run scripts/advanced_collectible/create_collectible.py --network rinkeby
+
+następnie
+
+brownie run scripts/advanced_collectible/create_metadata.py --network rinkeby
+brownie run scripts/advanced_collectible/set_tokenuri.py --network rinkeby
