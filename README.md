@@ -22,5 +22,9 @@ brownie run scripts/advanced_collectible/create_collectible.py --network rinkeby
 
 następnie
 
-brownie run scripts/advanced_collectible/create_metadata.py --network rinkeby
 brownie run scripts/advanced_collectible/set_tokenuri.py --network rinkeby
+
+jezeli chcesz stworzyc swoje wlasnie tokeny URI bedziesz potrzebować IPFS https://ipfs.io/#install
+jest to serwis do przechowywania danych peer to peer po zainstalowaniu uruchamiamy komendą ipfs daemon i uruchamiamy skrypt
+
+brownie run scripts/advanced_collectible/create_metadata.py --network rinkeby
